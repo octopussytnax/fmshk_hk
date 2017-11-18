@@ -1,0 +1,75 @@
+/* Buttons */
+/* animation */
+/* Main Colors */
+/* Paddings */
+/* line 3, ../../sass/inc/hero.scss */
+.av-hero-section {
+  padding: 250px 0;
+  position: relative;
+}
+/* line 8, ../../sass/inc/hero.scss */
+.av-hero-section * {
+  text-align: center;
+}
+/* line 10, ../../sass/inc/hero.scss */
+.av-hero-section .av-hero-title {
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 15, ../../sass/inc/hero.scss */
+.av-hero-section .av-hero-desc {
+  font-size: 1em;
+  margin: 0 0 20px 0;
+}
+/* line 19, ../../sass/inc/hero.scss */
+.av-hero-section .av-hero-desc:after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 20px auto 10px;
+}
+/* line 29, ../../sass/inc/hero.scss */
+.av-hero-section a {
+  margin: 15px;
+}
+
+/* line 35, ../../sass/inc/hero.scss */
+.av-video-hero {
+  position: relative;
+  overflow: hidden;
+  /* Video Hero Overlay */
+}
+/* line 41, ../../sass/inc/hero.scss */
+.av-video-hero .av-video-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+/* line 51, ../../sass/inc/hero.scss */
+.av-video-hero .av-video-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+@media (max-width: 480px) {
+  /* line 66, ../../sass/inc/hero.scss */
+  .av-hero-title {
+    font-size: 1.7em;
+  }
+
+  /* line 70, ../../sass/inc/hero.scss */
+  .av-hero-desc {
+    font-size: .8em;
+  }
+}

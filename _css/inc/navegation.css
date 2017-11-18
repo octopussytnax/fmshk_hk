@@ -1,0 +1,179 @@
+/* Buttons */
+/* animation */
+/* Main Colors */
+/* Paddings */
+/* line 3, ../../sass/inc/navegation.scss */
+.av-main-header {
+  position: relative;
+  border-bottom: 1px solid #d3d6dc;
+}
+/* line 7, ../../sass/inc/navegation.scss */
+.av-main-header.stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999999;
+}
+/* line 16, ../../sass/inc/navegation.scss */
+.av-main-header .av-mobile-toggle {
+  position: absolute;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: #333f50;
+  color: #fff;
+  line-height: 52px;
+  text-align: center;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 999;
+  font-size: 1.8em;
+  display: none;
+}
+/* line 32, ../../sass/inc/navegation.scss */
+.av-main-header .av-mobile-nav {
+  display: none;
+}
+/* line 34, ../../sass/inc/navegation.scss */
+.av-main-header .av-logo-container {
+  margin: 1em 0;
+}
+/* line 38, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav {
+  text-align: right;
+  margin: 0;
+}
+/* line 41, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li {
+  list-style: none;
+  display: inline-block;
+  font-size: .9em;
+  margin: 0;
+  position: relative;
+}
+/* line 48, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li a {
+  color: #646c7f;
+  padding: 2em .9em;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -1px;
+}
+/* line 55, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li a:hover, .av-main-header .av-main-nav li a.active {
+  color: #ff7859;
+  border-bottom: 1px solid #ff7859;
+}
+/* line 61, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li:hover > .av-sub-menu {
+  opacity: 1;
+  top: 82px;
+  z-index: 999;
+}
+/* line 67, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li .av-sub-menu {
+  background-color: #333f50;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  text-align: left;
+  margin: 0;
+  z-index: -100;
+  padding: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease all;
+  -o-transition: .5s ease all;
+  transition: .5s ease all;
+}
+/* line 83, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li .av-sub-menu li {
+  display: block;
+}
+/* line 86, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li .av-sub-menu li a {
+  color: #fff;
+  padding: 1em 2.2em;
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+}
+/* line 94, ../../sass/inc/navegation.scss */
+.av-main-header .av-main-nav li .av-sub-menu li a:hover {
+  color: #ff7859;
+}
+
+/* Responsive Menu */
+@media (max-width: 960px) {
+  /* line 109, ../../sass/inc/navegation.scss */
+  .av-main-nav {
+    display: none;
+  }
+
+  /* line 111, ../../sass/inc/navegation.scss */
+  .av-mobile-toggle {
+    display: block !important;
+  }
+
+  /* line 113, ../../sass/inc/navegation.scss */
+  .av-mobile-nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: .5pt;
+    max-height: 320px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+  /* line 134, ../../sass/inc/navegation.scss */
+  .av-mobile-nav li {
+    background-color: #333f50;
+  }
+  /* line 137, ../../sass/inc/navegation.scss */
+  .av-mobile-nav li a {
+    color: #fff;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* line 145, ../../sass/inc/navegation.scss */
+  .av-mobile-nav li a:hover {
+    color: #ff7859;
+  }
+  /* line 150, ../../sass/inc/navegation.scss */
+  .av-mobile-nav li .av-sub-menu {
+    padding: 0;
+    margin: 0;
+    position: inherit;
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: .5s ease all;
+    -o-transition: .5s ease all;
+    transition: .5s ease all;
+  }
+  /* line 161, ../../sass/inc/navegation.scss */
+  .av-mobile-nav li .av-sub-menu li {
+    display: block;
+  }
+  /* line 164, ../../sass/inc/navegation.scss */
+  .av-mobile-nav li .av-sub-menu li a {
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: capitalize;
+  }
+}
